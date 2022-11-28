@@ -32,13 +32,13 @@ const Flow = ({ mode, steps }) => {
           previous.map(
             ({ stepId: previousId, count, label }) => ({
               id: `${mode}-${id}-${previousId}}`,
-              source: `${mode}-${previousId}`,
-              target: `${mode}-${id}`,
-              arrowHeadType: 'none',
-              style: {
-                strokeWidth: 2,
-                stroke: 'rgb(152,152,152)'
-              },
+              //source: `${mode}-${previousId}`,
+              //target: `${mode}-${id}`,
+              //arrowHeadType: 'none',
+              //style: {
+              //  strokeWidth: 2,
+              //  stroke: 'rgb(152,152,152)'
+              //},
               type: 'smoothstep',
               label: `${label ? label + ': ' : ''}${count}`,
               labelShowBg: true,
